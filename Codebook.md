@@ -7,19 +7,30 @@ The original data was transformed by
   3.- Uses descriptive activity names to name the activities in the data set
   4.- Appropriately labels the data set with descriptive variable names. 
   5.- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+  
+Result of this code:
 
-Because most of the features in the original dataset were derived or estimated to 2nd or 3rd order from the original dataset, I chose to focus on the measurements most closely related to the original data collected by the accelerometer and gyroscope - tBodyAcc and tBodyGyro.
+  "ActivityName" 
+  "SubjectID" 
+  "tBodyAccMeanX" "tBodyAccMeanY" "tBodyAccMeanZ" "tBodyAccStdX" "tBodyAccStdY" "tBodyAccStdZ" 
+  "tGravityAccMeanX" "tGravityAccMeanY" "tGravityAccMeanZ" "tGravityAccStdX" "tGravityAccStdY" "tGravityAccStdZ" 
+  "tBodyAccJerkMeanX" "tBodyAccJerkMeanY" "tBodyAccJerkMeanZ" "tBodyAccJerkStdX" "tBodyAccJerkStdY" "tBodyAccJerkStdZ"
+  "tBodyGyroMeanX" "tBodyGyroMeanY" "tBodyGyroMeanZ" "tBodyGyroStdX" "tBodyGyroStdY" "tBodyGyroStdZ" 
+  "tBodyGyroJerkMeanX" "tBodyGyroJerkMeanY" "tBodyGyroJerkMeanZ" "tBodyGyroJerkStdX" "tBodyGyroJerkStdY" 
+  "tBodyGyroJerkStdZ" "tBodyAccMagMean" "tBodyAccMagStd" "tGravityAccMagMean" "tGravityAccMagStd" "
+  tBodyAccJerkMagMean" "tBodyAccJerkMagStd" "tBodyGyroMagMean" "tBodyGyroMagStd" "tBodyGyroJerkMagMean" 
+  "tBodyGyroJerkMagStd" "fBodyAccMeanX" "fBodyAccMeanY" "fBodyAccMeanZ" "fBodyAccStdX" "fBodyAccStdY" "fBodyAccStdZ" 
+  "fBodyAccJerkMeanX" "fBodyAccJerkMeanY" "fBodyAccJerkMeanZ" "fBodyAccJerkStdX" "fBodyAccJerkStdY" "fBodyAccJerkStdZ"
+  "fBodyGyroMeanX" "fBodyGyroMeanY" "fBodyGyroMeanZ" "fBodyGyroStdX" "fBodyGyroStdY" "fBodyGyroStdZ" 
+  "fBodyAccMagMean"  "fBodyAccMagStd" "fBodyBodyAccJerkMagMean" "fBodyBodyAccJerkMagStd" "fBodyBodyGyroMagMean" "fBodyBodyGyroMagStd" "fBodyBodyGyroJerkMagMean" "fBodyBodyGyroJerkMagStd"
 
 As a result, the variables remaining are just the calculatd means and standard deviations of these sets of data - one each for the X, Y and Z dimensions:
 
-    tBodyAcc-X
-    tBodyAcc-Y
-    tBodyAcc-Z
-    tBodyGyro-X
-    tBodyGyro-Y
-    tBodyGyro-Z
-
-Each of these has a mean and standard deviation version. Examples:
-
-    tBodyAcc-mean()-X: Mean of base body acceleration data in the X dimension
-    tBodyGyro-std()-Y: Standard deviation of base body gyroscope measurement in the Y dimension
+  Means:
+    "tBodyAccMeanX" 
+    "tBodyAccMeanY" 
+    "tBodyAccMeanZ" 
+  Standard deviation:
+    "tBodyAccStdX" 
+    "tBodyAccStdY" 
+    "tBodyAccStdZ" 
